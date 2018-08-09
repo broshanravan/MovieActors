@@ -12,4 +12,5 @@ public interface IMaintainActor {
     public MovieActor consructMovieActorFromDetailsDetailsLine(String line);
     public String validateOperation(String operation);
     public void processActorDetails(String operation, Scanner scanner);
+	
 }
