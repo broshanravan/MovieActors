@@ -15,6 +15,8 @@ import java.util.*;
 
 public class MaintainActor implements IMaintainActor {
 
+
+
     private String moveActorsFileName = "movieActorsList.txt";
 
     final static Logger logger = LogManager.getLogger(MaintainActor.class);
