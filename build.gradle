@@ -20,17 +20,14 @@ dependencies {
     implementation 'org.apache.logging.log4j:log4j-core:2.19.0'
 }
 
-task testJar(type: Jar, dependsOn: testClasses) {
-    baseName = "test-${project.archivesBaseName}"
-    from sourceSets.test.output
-}
+test {
+    useJUnitPlatform()
 
-configurations {
-    tests
-}
+    maxHeapSize = '1G'
 
-artifacts {
-    tests testJar
+    testLogging {
+        events "passed"
+    }
 }
 
 /*create a single Jar with all dependencies
