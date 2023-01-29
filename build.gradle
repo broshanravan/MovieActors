@@ -6,7 +6,7 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.17
 
 repositories {
     jcenter()
@@ -25,24 +25,8 @@ dependencies {
 
 
 }
-repositories { jcenter() }
 
 
-sourceSets {
-    main {
-        java {
-            srcDir 'src'
-        }
-    }
-}
-
-test {
-    useJUnitPlatform()
-    maxHeapSize = '1G'
-    testLogging {
-        events "passed"
-    }
-}
 
 /*create a single Jar with all dependencies
 task fatJar(type: Jar) {
