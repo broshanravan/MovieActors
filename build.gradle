@@ -20,7 +20,7 @@ dependencies {
     implementation 'org.apache.logging.log4j:log4j-core:2.19.0'
 }
 
-//create a single Jar with all dependencies
+/*create a single Jar with all dependencies
 task fatJar(type: Jar) {
     manifest {
         attributes 'Main-Class': 'ActorsRegigteration'
@@ -29,5 +29,4 @@ task fatJar(type: Jar) {
     baseName = project.name
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
     with jar
-}
-
+}*/
