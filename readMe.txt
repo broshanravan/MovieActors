@@ -7,7 +7,7 @@ Packaging the application:
 	To run the application first the application needs to be packaged to a Jar file.
 	To do so, navigate to the root folder of he application and run the command:
 
-			gradle fatJar to be looked into again!
+			gradle fatJar commented to be looked into again!
 			
 However this application is only a library which has to be either plugged into a larger application,
 or it needs a GUI to be operate as and stand alone app.
